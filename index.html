@@ -47,11 +47,34 @@
         box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
         z-index: 1000;
     }
+
+#google-maps-button {
+    position: absolute;
+    top: 200px; /*ajustar para que no choque con los otros elementos*/
+    right: 20px;
+    background-color: #4285F4;
+    color: rgb(235, 232, 213);
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none; /* Quita el subrayado del enlace */
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    z-index: 1000; /* Asegura que esté por encima del mapa */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease; /* Efecto suave al pasar el mouse */
+    }
+
+    #google-maps-button:hover {
+        background-color: #104396; /* Un azul ligeramente más oscuro al pasar el mouse */
+    }        
     </style>
 </head>
 <body>
     <div id="map-title"> Ruta MX0-SPMX15-spmx3-spmx23-SPMX14</div>
     <div id="map"></div>
+    <a href="https://www.google.com/maps/dir/19.6418453,-99.1433892/Muebler%C3%ADa+de+La+Romana,+Calle+Cuauht%C3%A9moc+202,+Hab+la+Romana,+54000+Tlalnepantla,+M%C3%A9x./Av+Acueducto+de+Tenayuca+20,+San+Jos%C3%A9+de+la+Escalera,+07630+Ciudad+de+M%C3%A9xico,+CDMX/Hda.+de+La+Carbonera+4,+Bosques+de+Echegaray,+53310+Naucalpan+de+Ju%C3%A1rez,+M%C3%A9x./@19.5640608,-99.2689501,26691m/data=!3m2!1e3!4b1!4m22!4m21!1m1!4e1!1m5!1m1!1s0x85d21d58994ce85f:0x4b0f9056151c1f4f!2m2!1d-99.1902204!2d19.5407213!1m5!1m1!1s0x85d1f78ae0b4fc6f:0x7bb7c6e1512ea29b!2m2!1d-99.1667806!2d19.5287616!1m5!1m1!1s0x85d202fcd20f9d75:0x876c198f909ac569!2m2!1d-99.2309543!2d19.4870662!3e0!5m1!1e3?entry=tts&g_ep=EgoyMDI1MDYxMS4wKgBIAVAD&skid=0acd5194-f287-4284-a284-abc64e2d49bf" target="_blank" id="google-maps-button">
+        Ver en Google Maps
+    </a>
     <div id="map-legend" class="legend">
         <h4>Leyenda</h4>
         <div><span style="background-color: #d8180c; width: 20px; height: 20px; display: inline-block; border-radius: 50%;"></span> Nivel de riesgo de ruta (Alto)</div>
